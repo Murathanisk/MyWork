@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mohave:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyWork Sign Up</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #d7bff5;
+            font-family: Mohave;
+            position: relative;
+            overflow: hidden;
+        }
+        .title {
+            color: #ffffff;
+            font-size: 45px;
+            margin-bottom: 20px;
+            z-index: 1;
+        }
+        .container {
+            width: 90%;
+            max-width: 360px;
+            height: auto;
+            background-color: #212936;
+            border-radius: 45px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            z-index: 1;
+        }
+        .container-top {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .container-middle {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        .container-bottom {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            width: 100%;
+        }
+        .container p {
+            color: #c9f257;
+            font-size: 30px;
+            margin: 0;
+        }
+        .input-wrapper {
+            position: relative;
+            width: 340px;
+            margin: 15px 0;
+        }
+        .input-wrapper img {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 20px;
+        }
+        .input-field {
+            width: 82%;
+            height: 45px;
+            border-radius: 20px;
+            font-family: Mohave;
+            font-size: 20px;
+            border: none;
+            background-color: #6c727f;
+            color: #C4C4C4;
+            padding: 0 15px 0 45px;
+        }
+        .input-field::placeholder {
+            color: #C4C4C4;
+        }
+        .btn {
+            width: 340px;
+            height: 45px;
+            margin: 20px 0;
+            font-family: Mohave;
+            font-size: 24px;
+            border-radius: 20px;
+            border: none;
+            background-color: #3b345c;
+            color: #6C727F;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .btn:hover {
+            background-color: #585068;
+            color: #ffffff;
+        }
+        .links {
+            text-align: center;
+            margin-top: 20px;
+            z-index: 1;
+        }
+        .links a {
+            color: #58820E;
+            font-size: 18px;
+            text-decoration: none;
+        }
+        .links span {
+            color: #FFFFFF;
+            font-size: 18px;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+        .background-image-1, .background-image-2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            z-index: 0;
+        }
+        .background-image-2 {
+            left: 0;
+            top: 0;
+            z-index: 0;
+        }
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+                height: auto;
+                padding: 15px;
+            }
+            .container p {
+                font-size: 1em;
+            }
+            .input-wrapper, .btn {
+                width: 100%;
+                height: 45px;
+            }
+            .links a, .links span {
+                font-size: 0.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+<img src="Vector (1).png" alt="Background Image 1" class="background-image-1">
+<img src="Vector.png" alt="Background Image 2" class="background-image-2">
+<div class="title">MyWork</div>
+<div class="container">
+    <div class="container-top">
+        <p>Create a MyWork Account</p>
+    </div>
+    <div class="container-middle">
+        <div class="input-wrapper">
+            <img src="nameIcon.png" alt="Name Icon">
+            <input type="text" class="input-field" placeholder="Your name">
+        </div>
+        <div class="input-wrapper">
+            <img src="mailIcon.png" alt="Email Icon">
+            <input type="email" class="input-field" placeholder="Your email">
+        </div>
+        <div class="input-wrapper">
+            <img src="passwordIcon.png" alt="Password Icon">
+            <input type="password" class="input-field" placeholder="Password">
+        </div>
+        <div class="input-wrapper">
+            <img src="passwordIcon.png" alt="Confirm Password Icon">
+            <input type="password" class="input-field" placeholder="Confirm password">
+        </div>
+    </div>
+    <div class="container-bottom">
+        <button class="btn">Sign up</button>
+    </div>
+</div>
+<div class="links">
+    <span>Already have an account? </span><a href="#">Login</a><br>
+</div>
+</body>
+</html>
